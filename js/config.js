@@ -30,7 +30,7 @@ const API_SITES = {
         name: '策驰影院',
     },
     kuaichezy: {
-        api: 'https://kuaichezy.com',
+        api: 'https://caiji.kuaichezy.org',
         name: '快车资源',
     },
     tyyszy: {
@@ -175,8 +175,10 @@ const SECURITY_CONFIG = {
     sanitizeUrls: true,         // 是否清理URL
     maxQueryLength: 100,        // 最大搜索长度
     allowedApiDomains: [        // 允许的API域名
-        'heimuer.xyz',
-        'ffzy5.tv'
+        'kuaichezy.com',
+        'ffzy5.tv',
+        'renrys.com',
+        'caiji.kuaichezy.org',
     ]
 };
 
