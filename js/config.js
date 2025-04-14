@@ -7,24 +7,31 @@ const MAX_HISTORY_ITEMS = 5;
 
 // 网站信息配置
 const SITE_CONFIG = {
-    name: 'LibreTV',
+    name: '小狗坨子TV',
     url: 'https://libretv.is-an.org',
-    description: '免费在线视频搜索与观看平台',
-    logo: 'https://images.icon-icons.com/38/PNG/512/retrotv_5520.png',
+    description: '人潮拥挤，不要走散',
+    logo: 'file:///D:/One%20Drive/%E5%9B%BE%E7%89%87/image_1730389657946.png',
     version: '1.0.0'
 };
 
 // API站点配置
 const API_SITES = {
-    heimuer: {
-        api: 'https://json.heimuer.xyz',
-        name: '黑木耳',
-        detail: 'https://heimuer.tv'
-    },
     ffzy: {
         api: 'http://ffzy5.tv',
         name: '非凡影视',
         detail: 'http://ffzy5.tv'
+    },
+    renrys: {
+        api: 'https://renrys.com',
+        name: '人人影视',
+    },
+    jichang: {
+        api: 'https://jichangting.com',
+        name: '策驰影院',
+    },
+    kuaichezy: {
+        api: 'https://kuaichezy.com',
+        name: '快车资源',
     },
     tyyszy: {
         api: 'https://tyyszy.com',
@@ -103,12 +110,6 @@ const API_SITES = {
         name: 'lsb资源',
         adult: true
     },
-    huangcang: {
-        api: 'https://hsckzy.vip',
-        name: '黄色仓库',
-        adult: true,
-        detail: 'https://hsckzy.vip' // 添加detail URL以便特殊处理
-    }
 };
 
 // 添加聚合搜索的配置选项
@@ -182,7 +183,7 @@ const SECURITY_CONFIG = {
 // 添加多个自定义API源的配置
 const CUSTOM_API_CONFIG = {
     separator: ',',           // 分隔符
-    maxSources: 5,            // 最大允许的自定义源数量
+    maxSources: 20,            // 最大允许的自定义源数量
     testTimeout: 5000,        // 测试超时时间(毫秒)
     namePrefix: 'Custom-',    // 自定义源名称前缀
     validateUrl: true,        // 验证URL格式
